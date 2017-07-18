@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v1.1": {
-      "wss.dateaccess/1.0.0": {
+      "wss.dataaccess/1.0.0": {
         "runtime": {
-          "Wss.DateAccess.dll": {}
+          "Wss.DataAccess.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "wss.dateaccess/1.0.0": {
+    "wss.dataaccess/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,4 @@
+D:\exercise\wss\wss\Wss.DataAccess\bin\Debug\netcoreapp1.1\Wss.DataAccess.deps.json
+D:\exercise\wss\wss\Wss.DataAccess\bin\Debug\netcoreapp1.1\Wss.DataAccess.dll
+D:\exercise\wss\wss\Wss.DataAccess\obj\Debug\netcoreapp1.1\Wss.DataAccess.csprojResolveAssemblyReference.cache
+D:\exercise\wss\wss\Wss.DataAccess\obj\Debug\netcoreapp1.1\Wss.DataAccess.AssemblyInfo.cs

@@ -2525,6 +2525,13 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "Wss.WebService.Message/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.1",
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.1.2"
+        }
       }
     }
   },
@@ -7632,12 +7639,18 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "Wss.WebService.Message/1.0.0": {
+      "type": "project",
+      "path": "../Wss.WebService.Message/Wss.WebService.Message.csproj",
+      "msbuildProject": "../Wss.WebService.Message/Wss.WebService.Message.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
       "Microsoft.NETCore.App >= 1.1.2",
-      "SmartSql.DataAccess >= 1.4.8.1"
+      "SmartSql.DataAccess >= 1.4.8.1",
+      "Wss.WebService.Message >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7646,17 +7659,21 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\hj\\documents\\visual studio 2017\\Projects\\Wss\\Wss.DateAccess\\Wss.DateAccess.csproj",
-      "projectName": "Wss.DateAccess",
-      "projectPath": "c:\\Users\\hj\\documents\\visual studio 2017\\Projects\\Wss\\Wss.DateAccess\\Wss.DateAccess.csproj",
-      "outputPath": "c:\\Users\\hj\\documents\\visual studio 2017\\Projects\\Wss\\Wss.DateAccess\\obj\\",
+      "projectUniqueName": "D:\\exercise\\wss\\wss\\Wss.DataAccess\\Wss.DataAccess.csproj",
+      "projectName": "Wss.DataAccess",
+      "projectPath": "D:\\exercise\\wss\\wss\\Wss.DataAccess\\Wss.DataAccess.csproj",
+      "outputPath": "D:\\exercise\\wss\\wss\\Wss.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "frameworks": {
         "netcoreapp1.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\exercise\\wss\\wss\\Wss.WebService.Message\\Wss.WebService.Message.csproj": {
+              "projectPath": "D:\\exercise\\wss\\wss\\Wss.WebService.Message\\Wss.WebService.Message.csproj"
+            }
+          }
         }
       }
     },

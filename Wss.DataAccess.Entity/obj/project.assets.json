@@ -7042,10 +7042,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\hj\\documents\\visual studio 2017\\Projects\\Wss\\Wss.DataAccess.Entity\\Wss.DataAccess.Entity.csproj",
+      "projectUniqueName": "D:\\exercise\\wss\\wss\\Wss.DataAccess.Entity\\Wss.DataAccess.Entity.csproj",
       "projectName": "Wss.DataAccess.Entity",
-      "projectPath": "c:\\Users\\hj\\documents\\visual studio 2017\\Projects\\Wss\\Wss.DataAccess.Entity\\Wss.DataAccess.Entity.csproj",
-      "outputPath": "c:\\Users\\hj\\documents\\visual studio 2017\\Projects\\Wss\\Wss.DataAccess.Entity\\obj\\",
+      "projectPath": "D:\\exercise\\wss\\wss\\Wss.DataAccess.Entity\\Wss.DataAccess.Entity.csproj",
+      "outputPath": "D:\\exercise\\wss\\wss\\Wss.DataAccess.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

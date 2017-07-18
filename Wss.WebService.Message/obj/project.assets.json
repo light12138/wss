@@ -7042,10 +7042,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\hj\\documents\\visual studio 2017\\Projects\\Wss\\Wss.WebService.Message\\Wss.WebService.Message.csproj",
+      "projectUniqueName": "D:\\exercise\\wss\\wss\\Wss.WebService.Message\\Wss.WebService.Message.csproj",
       "projectName": "Wss.WebService.Message",
-      "projectPath": "c:\\Users\\hj\\documents\\visual studio 2017\\Projects\\Wss\\Wss.WebService.Message\\Wss.WebService.Message.csproj",
-      "outputPath": "c:\\Users\\hj\\documents\\visual studio 2017\\Projects\\Wss\\Wss.WebService.Message\\obj\\",
+      "projectPath": "D:\\exercise\\wss\\wss\\Wss.WebService.Message\\Wss.WebService.Message.csproj",
+      "outputPath": "D:\\exercise\\wss\\wss\\Wss.WebService.Message\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

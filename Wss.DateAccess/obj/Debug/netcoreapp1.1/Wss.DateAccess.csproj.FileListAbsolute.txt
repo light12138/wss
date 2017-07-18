@@ -1,3 +1,0 @@
-c:\Users\hj\documents\visual studio 2017\Projects\Wss\Wss.DateAccess\bin\Debug\netcoreapp1.1\Wss.DateAccess.deps.json
-c:\Users\hj\documents\visual studio 2017\Projects\Wss\Wss.DateAccess\bin\Debug\netcoreapp1.1\Wss.DateAccess.dll
-c:\Users\hj\documents\visual studio 2017\Projects\Wss\Wss.DateAccess\obj\Debug\netcoreapp1.1\Wss.DateAccess.AssemblyInfo.cs
