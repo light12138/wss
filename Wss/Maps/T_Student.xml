@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartSqlMap Scope="T_Student"  xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+  <Statements>
+    <Statement Id="Insert">
+      INSERT INTO dbo.Student
+      ( Name, Age, GradeId )
+      VALUES  (@Name,@Age,@GradeId)
+    </Statement>
+  </Statements>  
+</SmartSqlMap>

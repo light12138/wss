@@ -1,0 +1,6 @@
+c:\Users\hj\documents\visual studio 2017\Projects\Wss\Wss.WebService.Message\bin\Debug\netcoreapp1.1\Wss.WebService.Message.deps.json
+c:\Users\hj\documents\visual studio 2017\Projects\Wss\Wss.WebService.Message\bin\Debug\netcoreapp1.1\Wss.WebService.Message.dll
+c:\Users\hj\documents\visual studio 2017\Projects\Wss\Wss.WebService.Message\bin\Debug\netcoreapp1.1\Wss.WebService.Message.pdb
+c:\Users\hj\documents\visual studio 2017\Projects\Wss\Wss.WebService.Message\obj\Debug\netcoreapp1.1\Wss.WebService.Message.AssemblyInfo.cs
+c:\Users\hj\documents\visual studio 2017\Projects\Wss\Wss.WebService.Message\obj\Debug\netcoreapp1.1\Wss.WebService.Message.dll
+c:\Users\hj\documents\visual studio 2017\Projects\Wss\Wss.WebService.Message\obj\Debug\netcoreapp1.1\Wss.WebService.Message.pdb

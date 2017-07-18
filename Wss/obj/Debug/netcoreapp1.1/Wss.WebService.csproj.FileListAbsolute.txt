@@ -1,0 +1,8 @@
+c:\users\hj\documents\visual studio 2017\Projects\Wss\Wss\bin\Debug\netcoreapp1.1\Wss.WebService.deps.json
+c:\users\hj\documents\visual studio 2017\Projects\Wss\Wss\bin\Debug\netcoreapp1.1\Wss.WebService.runtimeconfig.json
+c:\users\hj\documents\visual studio 2017\Projects\Wss\Wss\bin\Debug\netcoreapp1.1\Wss.WebService.runtimeconfig.dev.json
+c:\users\hj\documents\visual studio 2017\Projects\Wss\Wss\bin\Debug\netcoreapp1.1\Wss.WebService.dll
+c:\users\hj\documents\visual studio 2017\Projects\Wss\Wss\bin\Debug\netcoreapp1.1\Wss.WebService.pdb
+c:\users\hj\documents\visual studio 2017\Projects\Wss\Wss\obj\Debug\netcoreapp1.1\Wss.WebService.AssemblyInfo.cs
+c:\users\hj\documents\visual studio 2017\Projects\Wss\Wss\obj\Debug\netcoreapp1.1\Wss.WebService.dll
+c:\users\hj\documents\visual studio 2017\Projects\Wss\Wss\obj\Debug\netcoreapp1.1\Wss.WebService.pdb
