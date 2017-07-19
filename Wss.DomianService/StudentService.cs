@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SmartSql.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Wss.DataAccess;
@@ -11,9 +12,12 @@ namespace Wss.DomianService
     {
         StudentDateAccess _studentService;
 
-        public StudentService(StudentDateAccess acc)
+        ISmartSqlMapper _smartSqlMapper;
+
+        public StudentService(StudentDateAccess acc, ISmartSqlMapper sma)
         {
             this._studentService = acc;
+            this._smartSqlMapper = sma;
         }
 
         public ResponseMessage AddEnquiy (AddEnquiyRequest reqMsg)

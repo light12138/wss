@@ -9,13 +9,22 @@
       <IsNotEmpty Prepend="And" Property="Id">
         Id=@Id
       </IsNotEmpty>
+      <IsNotEmpty Prepend="CreateStartTime" Property="And">
+       <![CDATA[ CreateTime>@CreateStartTime]]>
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="CreateEndTime">
+       <![CDATA[ CreateTime<@CreateEndTime]]>
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="Sex">
+        Sex=@Sex
+      </IsNotEmpty>
     </Statement>
     
     
     <Statement Id="Insert">
       INSERT INTO dbo.Student
-      ( Name, Age, GradeId )
-      VALUES  (@Name,@Age,@GradeId)
+      ( Name, Age, GradeId,CreateTime,@Sex)
+      VALUES  (@Name,@Age,@GradeId,@CreateTime,@Sex)
     </Statement>
 
     <Statement Id="Update">

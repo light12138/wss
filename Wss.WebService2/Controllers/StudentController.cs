@@ -9,6 +9,7 @@ using Wss.WebService.Message.Response;
 using Wss.DataAccess.Entity;
 using SmartSql.Abstractions;
 using MaiDao.Infrastructure.Message;
+using System.Net.Http;
 
 namespace Wss.WebService2.Controllers
 {
@@ -91,7 +92,8 @@ namespace Wss.WebService2.Controllers
                 }
             };
         }
+        //public HttpResponseMessage
 
-       
+
     }
 }

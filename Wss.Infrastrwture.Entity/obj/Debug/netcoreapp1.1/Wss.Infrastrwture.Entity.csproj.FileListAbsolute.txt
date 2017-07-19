@@ -4,4 +4,3 @@ D:\exercise\wss\wss\Wss.Infrastrwture.Entity\bin\Debug\netcoreapp1.1\Wss.Infrast
 D:\exercise\wss\wss\Wss.Infrastrwture.Entity\obj\Debug\netcoreapp1.1\Wss.Infrastrwture.Entity.AssemblyInfo.cs
 D:\exercise\wss\wss\Wss.Infrastrwture.Entity\obj\Debug\netcoreapp1.1\Wss.Infrastrwture.Entity.dll
 D:\exercise\wss\wss\Wss.Infrastrwture.Entity\obj\Debug\netcoreapp1.1\Wss.Infrastrwture.Entity.pdb
-D:\exercise\wss\wss\Wss.Infrastrwture.Entity\obj\Debug\netcoreapp1.1\Wss.Infrastrwture.Entity.csprojResolveAssemblyReference.cache

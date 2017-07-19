@@ -56,7 +56,15 @@ namespace Wss.WebService2
                 });
                 c.CustomSchemaIds(type => type.FullName);
             });
-           
+
+            #endregion
+
+            #region 身份认证
+       //     services.AddIdentity<ApplicationUser, IdentityRole>()
+       //.AddEntityFrameworkStores<ApplicationDbContext>()
+       //.AddDefaultTokenProviders();
+          
+
             #endregion
         }
 
@@ -76,6 +84,7 @@ namespace Wss.WebService2
             {
                 routes.MapRoute("Student", "{controller}/{action}");
             });
+            app.UseExceptionHandler("/Error.html");
         }
     }
 }

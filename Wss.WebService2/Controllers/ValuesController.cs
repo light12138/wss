@@ -20,6 +20,7 @@ namespace Wss.WebService2.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
+            //var i =1/;
             return "value";
         }
 
