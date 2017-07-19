@@ -9,6 +9,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Wss.DomianService;
 using Wss.DataAccess;
+using Microsoft.Extensions.PlatformAbstractions;
+using System.IO;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Wss
 {
@@ -39,6 +42,17 @@ namespace Wss
             //加载出来Command操作类
             services.AddSingleton<StudentService>();
             services.AddSingleton<StudentDateAccess>(new StudentDateAccess());
+
+
+            #region Swagger的配置            
+           
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+                c.CustomSchemaIds(type => type.FullName);
+            });
+            #endregion
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,9 +61,20 @@ namespace Wss
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+            //app.UseSwaggerUI(c =>
+            //{
+            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "TwBusManagement API V1");
+            //    c.ShowRequestHeaders();
+            //});
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
+
             app.UseMvc(routes =>
             {
-                routes.MapRoute("Service", "{controller}/{action}");
+                routes.MapRoute("Student", "{controller}/{action}");
             });
         }
     }

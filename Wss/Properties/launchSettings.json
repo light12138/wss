@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Wss": {
+    "Wss.WebService": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",
@@ -27,3 +27,4 @@
     }
   }
 }
+

@@ -6,21 +6,24 @@ c:\users\hj\documents\visual studio 2017\Projects\Wss\Wss\bin\Debug\netcoreapp1.
 c:\users\hj\documents\visual studio 2017\Projects\Wss\Wss\obj\Debug\netcoreapp1.1\Wss.WebService.AssemblyInfo.cs
 c:\users\hj\documents\visual studio 2017\Projects\Wss\Wss\obj\Debug\netcoreapp1.1\Wss.WebService.dll
 c:\users\hj\documents\visual studio 2017\Projects\Wss\Wss\obj\Debug\netcoreapp1.1\Wss.WebService.pdb
+D:\exercise\wss\wss\Wss\bin\Debug\netcoreapp1.1\Maps\T_Student.xml
+D:\exercise\wss\wss\Wss\bin\Debug\netcoreapp1.1\SmartSqlMapConfig.xml
 D:\exercise\wss\wss\Wss\bin\Debug\netcoreapp1.1\Wss.WebService.deps.json
 D:\exercise\wss\wss\Wss\bin\Debug\netcoreapp1.1\Wss.WebService.runtimeconfig.json
 D:\exercise\wss\wss\Wss\bin\Debug\netcoreapp1.1\Wss.WebService.runtimeconfig.dev.json
 D:\exercise\wss\wss\Wss\bin\Debug\netcoreapp1.1\Wss.WebService.dll
 D:\exercise\wss\wss\Wss\bin\Debug\netcoreapp1.1\Wss.WebService.pdb
-D:\exercise\wss\wss\Wss\obj\Debug\netcoreapp1.1\Wss.WebService.AssemblyInfo.cs
-D:\exercise\wss\wss\Wss\obj\Debug\netcoreapp1.1\Wss.WebService.dll
-D:\exercise\wss\wss\Wss\obj\Debug\netcoreapp1.1\Wss.WebService.pdb
-D:\exercise\wss\wss\Wss\obj\Debug\netcoreapp1.1\Wss.WebService.csprojResolveAssemblyReference.cache
 D:\exercise\wss\wss\Wss\bin\Debug\netcoreapp1.1\Wss.DataAccess.dll
 D:\exercise\wss\wss\Wss\bin\Debug\netcoreapp1.1\Wss.DataAccess.Entity.dll
 D:\exercise\wss\wss\Wss\bin\Debug\netcoreapp1.1\Wss.DomianService.dll
 D:\exercise\wss\wss\Wss\bin\Debug\netcoreapp1.1\Wss.Infrastrwture.Entity.dll
 D:\exercise\wss\wss\Wss\bin\Debug\netcoreapp1.1\Wss.WebService.Message.dll
+D:\exercise\wss\wss\Wss\bin\Debug\netcoreapp1.1\Wss.DomianService.pdb
 D:\exercise\wss\wss\Wss\bin\Debug\netcoreapp1.1\Wss.DataAccess.pdb
 D:\exercise\wss\wss\Wss\bin\Debug\netcoreapp1.1\Wss.DataAccess.Entity.pdb
 D:\exercise\wss\wss\Wss\bin\Debug\netcoreapp1.1\Wss.Infrastrwture.Entity.pdb
 D:\exercise\wss\wss\Wss\bin\Debug\netcoreapp1.1\Wss.WebService.Message.pdb
+D:\exercise\wss\wss\Wss\obj\Debug\netcoreapp1.1\Wss.WebService.csprojResolveAssemblyReference.cache
+D:\exercise\wss\wss\Wss\obj\Debug\netcoreapp1.1\Wss.WebService.AssemblyInfo.cs
+D:\exercise\wss\wss\Wss\obj\Debug\netcoreapp1.1\Wss.WebService.dll
+D:\exercise\wss\wss\Wss\obj\Debug\netcoreapp1.1\Wss.WebService.pdb

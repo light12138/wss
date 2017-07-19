@@ -40,8 +40,8 @@ namespace Wss.WebService.Controllers
         } 
         #endregion
 
-        [HttpPost]
-        public ResponseMessageWrap<QueryStudentEnquiryResponse> QueryStudentEnquiry([FromBody]QueryStudentEnquiryRequest reqMsg)
+       [HttpGet]
+        public ResponseMessageWrap<QueryStudentEnquiryResponse> QueryStudentEnquiry(QueryStudentEnquiryRequest reqMsg)
         {
             var list = _smartSqlMapper.Query<Student>(new RequestContext()
             {

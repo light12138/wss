@@ -65,5 +65,10 @@ namespace Wss.DomianService
             }
             return result;
         }
+
+        public ResponseMessage AddsEnquiy(AddSEnquiyResponse reqMsg)
+        {
+            return _studentService.AddsEnquiy(reqMsg);
+        }
     }
 }

@@ -7,9 +7,9 @@ c:\Users\hj\documents\visual studio 2017\Projects\Wss\Wss.WebService.Message\obj
 D:\exercise\wss\wss\Wss.WebService.Message\bin\Debug\netcoreapp1.1\Wss.WebService.Message.deps.json
 D:\exercise\wss\wss\Wss.WebService.Message\bin\Debug\netcoreapp1.1\Wss.WebService.Message.dll
 D:\exercise\wss\wss\Wss.WebService.Message\bin\Debug\netcoreapp1.1\Wss.WebService.Message.pdb
-D:\exercise\wss\wss\Wss.WebService.Message\obj\Debug\netcoreapp1.1\Wss.WebService.Message.AssemblyInfo.cs
-D:\exercise\wss\wss\Wss.WebService.Message\obj\Debug\netcoreapp1.1\Wss.WebService.Message.dll
-D:\exercise\wss\wss\Wss.WebService.Message\obj\Debug\netcoreapp1.1\Wss.WebService.Message.pdb
 D:\exercise\wss\wss\Wss.WebService.Message\bin\Debug\netcoreapp1.1\Wss.DataAccess.Entity.dll
 D:\exercise\wss\wss\Wss.WebService.Message\bin\Debug\netcoreapp1.1\Wss.DataAccess.Entity.pdb
 D:\exercise\wss\wss\Wss.WebService.Message\obj\Debug\netcoreapp1.1\Wss.WebService.Message.csprojResolveAssemblyReference.cache
+D:\exercise\wss\wss\Wss.WebService.Message\obj\Debug\netcoreapp1.1\Wss.WebService.Message.AssemblyInfo.cs
+D:\exercise\wss\wss\Wss.WebService.Message\obj\Debug\netcoreapp1.1\Wss.WebService.Message.dll
+D:\exercise\wss\wss\Wss.WebService.Message\obj\Debug\netcoreapp1.1\Wss.WebService.Message.pdb

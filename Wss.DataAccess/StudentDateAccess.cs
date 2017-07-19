@@ -1,8 +1,10 @@
-﻿using SmartSql.Abstractions;
+﻿
+using SmartSql.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using Wss.WebService.Message.Request;
+using Wss.WebService.Message.Response;
 
 namespace Wss.DataAccess
 {
@@ -37,7 +39,36 @@ namespace Wss.DataAccess
             });
             return iRet;
         }
-        //public 
+        public ResponseMessage AddsEnquiy(AddSEnquiyResponse reqMsg)
+        {
+            var result = new ResponseMessage();
+            var iRet = 0;
+            try
+            {
+                SqlMapper.BeginTransaction();
+                
+                foreach (var req in reqMsg.AddsEnquiyList)
+                {
+                    iRet += SqlMapper.Execute(new RequestContext()
+                    {
+                        SqlId = "Insert",
+                        Scope = Scope,
+                        Request = req
+                    });
+                }
+                SqlMapper.CommitTransaction();
+            }
+            catch(Exception e)
+            {
+                SqlMapper.RollbackTransaction();
+                result.IsSuccess = false;
+                result.Msg = e.Message;
+                return result;
+            }
+            result.IsSuccess = true;
+            result.Msg = "添加数据"+ reqMsg.AddsEnquiyList.Count+",成功"+iRet+"条";
+            return result;
+        }
 
     }
 }

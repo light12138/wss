@@ -1,3 +1,15 @@
 D:\exercise\wss\wss\Wss.DomianService\bin\Debug\netcoreapp1.1\Wss.DomianService.deps.json
+D:\exercise\wss\wss\Wss.DomianService\bin\Debug\netcoreapp1.1\Wss.DomianService.dll
+D:\exercise\wss\wss\Wss.DomianService\bin\Debug\netcoreapp1.1\Wss.DomianService.pdb
+D:\exercise\wss\wss\Wss.DomianService\bin\Debug\netcoreapp1.1\Wss.DataAccess.dll
+D:\exercise\wss\wss\Wss.DomianService\bin\Debug\netcoreapp1.1\Wss.DataAccess.Entity.dll
+D:\exercise\wss\wss\Wss.DomianService\bin\Debug\netcoreapp1.1\Wss.Infrastrwture.Entity.dll
+D:\exercise\wss\wss\Wss.DomianService\bin\Debug\netcoreapp1.1\Wss.WebService.Message.dll
+D:\exercise\wss\wss\Wss.DomianService\bin\Debug\netcoreapp1.1\Wss.DataAccess.Entity.pdb
+D:\exercise\wss\wss\Wss.DomianService\bin\Debug\netcoreapp1.1\Wss.DataAccess.pdb
+D:\exercise\wss\wss\Wss.DomianService\bin\Debug\netcoreapp1.1\Wss.Infrastrwture.Entity.pdb
+D:\exercise\wss\wss\Wss.DomianService\bin\Debug\netcoreapp1.1\Wss.WebService.Message.pdb
 D:\exercise\wss\wss\Wss.DomianService\obj\Debug\netcoreapp1.1\Wss.DomianService.csprojResolveAssemblyReference.cache
 D:\exercise\wss\wss\Wss.DomianService\obj\Debug\netcoreapp1.1\Wss.DomianService.AssemblyInfo.cs
+D:\exercise\wss\wss\Wss.DomianService\obj\Debug\netcoreapp1.1\Wss.DomianService.dll
+D:\exercise\wss\wss\Wss.DomianService\obj\Debug\netcoreapp1.1\Wss.DomianService.pdb
