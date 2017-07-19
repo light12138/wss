@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Wss.DomianService;
+using Wss.DataAccess;
 
 namespace Wss
 {
@@ -29,6 +31,14 @@ namespace Wss
         {
             // Add framework services.
             services.AddMvc();
+
+
+            //直接加载出来数据操作类
+            services.AddSingleton(SmartSql.MapperContainer.Instance.GetSqlMapper());
+
+            //加载出来Command操作类
+            services.AddSingleton<StudentService>();
+            services.AddSingleton<StudentDateAccess>(new StudentDateAccess());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,7 +47,10 @@ namespace Wss
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute("Service", "{controller}/{action}");
+            });
         }
     }
 }

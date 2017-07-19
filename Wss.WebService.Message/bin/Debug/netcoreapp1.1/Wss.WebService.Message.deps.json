@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v1.1": {
       "wss.webservice.message/1.0.0": {
+        "dependencies": {
+          "Wss.DataAccess.Entity": "1.0.0"
+        },
         "runtime": {
           "Wss.WebService.Message.dll": {}
+        }
+      },
+      "wss.dataaccess.entity/1.0.0": {
+        "runtime": {
+          "Wss.DataAccess.Entity.dll": {}
         }
       }
     }
   },
   "libraries": {
     "wss.webservice.message/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "wss.dataaccess.entity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

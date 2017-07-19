@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SmartSql" Version="1.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Wss.DataAccess.Entity\Wss.DataAccess.Entity.csproj" />
+    <ProjectReference Include="..\Wss.DataAccess\Wss.DataAccess.csproj" />
+    <ProjectReference Include="..\Wss.Infrastrwture.Entity\Wss.Infrastrwture.Entity.csproj" />
+  </ItemGroup>
+
+</Project>

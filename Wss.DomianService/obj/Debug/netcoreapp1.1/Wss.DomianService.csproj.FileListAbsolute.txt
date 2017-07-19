@@ -1,0 +1,3 @@
+D:\exercise\wss\wss\Wss.DomianService\bin\Debug\netcoreapp1.1\Wss.DomianService.deps.json
+D:\exercise\wss\wss\Wss.DomianService\obj\Debug\netcoreapp1.1\Wss.DomianService.csprojResolveAssemblyReference.cache
+D:\exercise\wss\wss\Wss.DomianService\obj\Debug\netcoreapp1.1\Wss.DomianService.AssemblyInfo.cs
