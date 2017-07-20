@@ -1,0 +1,9 @@
+D:\exercise\wss\wss\Testlogger\bin\Debug\netcoreapp1.1\Testlogger.deps.json
+D:\exercise\wss\wss\Testlogger\bin\Debug\netcoreapp1.1\Testlogger.runtimeconfig.json
+D:\exercise\wss\wss\Testlogger\bin\Debug\netcoreapp1.1\Testlogger.runtimeconfig.dev.json
+D:\exercise\wss\wss\Testlogger\bin\Debug\netcoreapp1.1\Testlogger.dll
+D:\exercise\wss\wss\Testlogger\bin\Debug\netcoreapp1.1\Testlogger.pdb
+D:\exercise\wss\wss\Testlogger\obj\Debug\netcoreapp1.1\Testlogger.csprojResolveAssemblyReference.cache
+D:\exercise\wss\wss\Testlogger\obj\Debug\netcoreapp1.1\Testlogger.AssemblyInfo.cs
+D:\exercise\wss\wss\Testlogger\obj\Debug\netcoreapp1.1\Testlogger.dll
+D:\exercise\wss\wss\Testlogger\obj\Debug\netcoreapp1.1\Testlogger.pdb

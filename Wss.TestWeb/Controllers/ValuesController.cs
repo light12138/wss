@@ -13,6 +13,9 @@ namespace Wss.TestWeb.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
+            int i = 0;
+            int j = 1;
+            int b = j / i;
             return new string[] { "value1", "value2" };
         }
 

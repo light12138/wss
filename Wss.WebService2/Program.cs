@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace Wss.WebService2
 {
@@ -18,6 +19,9 @@ namespace Wss.WebService2
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .UseApplicationInsights()
+                .ConfigureLogging(factory => factory.AddConsole())
+                .UseSetting("detailedErrors", "true")
+                .CaptureStartupErrors(true)
                 .Build();
 
             host.Run();

@@ -13,6 +13,8 @@ namespace Wss.TestWeb
         public static void Main(string[] args)
         {
             var host = new WebHostBuilder()
+                .UseSetting("detailedErrors", "true")
+                .CaptureStartupErrors(true)
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()

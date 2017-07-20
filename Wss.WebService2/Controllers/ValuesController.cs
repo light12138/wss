@@ -3,25 +3,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+using NLog;
 
 namespace Wss.WebService2.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]/[Action]")]
     public class ValuesController : Controller
     {
+
+        static Logger Logger = LogManager.GetCurrentClassLogger();
         // GET api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
+        [HttpGet]       
+        public IEnumerable<string> Get(int i)
         {
-            return new string[] { "value1", "value2" };
+            //HttpContext.Session.SetString("abc", "wss");
+            //var name=HttpContext.Session.GetString("abc");
+            return new string[] { "value1", "500" };
+          
         }
 
         // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet]       
+        public string Get1(int a)
         {
             //var i =1/;
-            return "value";
+          
+                int i = 0;
+                int j = 1;
+                int b = j / i;          
+
+            return "404";
         }
 
         // POST api/values

@@ -4,3 +4,4 @@ D:\exercise\wss\wss\Wss.DataAccess.Entity\bin\Debug\netcoreapp1.1\Wss.DataAccess
 D:\exercise\wss\wss\Wss.DataAccess.Entity\obj\Debug\netcoreapp1.1\Wss.DataAccess.Entity.AssemblyInfo.cs
 D:\exercise\wss\wss\Wss.DataAccess.Entity\obj\Debug\netcoreapp1.1\Wss.DataAccess.Entity.dll
 D:\exercise\wss\wss\Wss.DataAccess.Entity\obj\Debug\netcoreapp1.1\Wss.DataAccess.Entity.pdb
+D:\exercise\wss\wss\Wss.DataAccess.Entity\obj\Debug\netcoreapp1.1\Wss.DataAccess.Entity.csprojResolveAssemblyReference.cache

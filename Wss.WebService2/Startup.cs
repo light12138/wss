@@ -10,6 +10,9 @@ using Microsoft.Extensions.Logging;
 using Wss.DomianService;
 using Wss.DataAccess;
 using Swashbuckle.AspNetCore.Swagger;
+using NLog.Extensions.Logging;
+using NLog.Web;
+using Wss.WebService2.Common;
 
 namespace Wss.WebService2
 {
@@ -31,7 +34,11 @@ namespace Wss.WebService2
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddMvc();
+            services.AddMvc((options) =>
+            {
+                options.Filters.Add(typeof(WebApiExceptionFilterAttribute));
+               // options.Filters.Add(typeof(HttpGlobalValidateModelFilter));
+            });
 
             //直接加载出来数据操作类
             services.AddSingleton(SmartSql.MapperContainer.Instance.GetSqlMapper());
@@ -60,20 +67,49 @@ namespace Wss.WebService2
             #endregion
 
             #region 身份认证
-       //     services.AddIdentity<ApplicationUser, IdentityRole>()
-       //.AddEntityFrameworkStores<ApplicationDbContext>()
-       //.AddDefaultTokenProviders();
-          
+            //     services.AddIdentity<ApplicationUser, IdentityRole>()
+            //.AddEntityFrameworkStores<ApplicationDbContext>()
+            //.AddDefaultTokenProviders();
+
 
             #endregion
+
+            #region 启用session
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options =>
+            {
+                // Set a short timeout for easy testing.
+                options.IdleTimeout = TimeSpan.FromSeconds(10);
+                options.CookieHttpOnly = true;
+            });
+
+            #endregion
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            //env.EnvironmentName = EnvironmentName.Production;
+            //if (env.IsDevelopment())
+            //{
+            //    app.UseDeveloperExceptionPage();
+            //}
+            //else
+            //{
+            //    app.UseExceptionHandler("/Error");
+            //}
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+
+            // Create a catch-all response
+           
+
+
+            app.UseSession();
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
@@ -84,7 +120,16 @@ namespace Wss.WebService2
             {
                 routes.MapRoute("Student", "{controller}/{action}");
             });
-            app.UseExceptionHandler("/Error.html");
+
+            loggerFactory.AddNLog();//添加NLog  
+            env.ConfigureNLog("nlog.config");//读取Nlog配置文件  
+
+
+            //app.UseStatusCodePages();
+            //app.UseExceptionHandler("/Errors/500");
+            //app.UseStatusCodePagesWithReExecute("/Errors/{0}");           
+
+
         }
     }
 }

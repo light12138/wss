@@ -10,6 +10,7 @@ using Wss.DataAccess.Entity;
 using SmartSql.Abstractions;
 using MaiDao.Infrastructure.Message;
 using System.Net.Http;
+using Microsoft.Extensions.Logging;
 
 namespace Wss.WebService2.Controllers
 {
@@ -20,11 +21,20 @@ namespace Wss.WebService2.Controllers
         readonly ISmartSqlMapper _smartSqlMapper;
 
         readonly StudentService _studentService;
+        private readonly ILogger<StudentController> _logger;
 
-        public StudentController(ISmartSqlMapper smartSqlMapper, StudentService StudentService)
+
+        public StudentController(ISmartSqlMapper smartSqlMapper, StudentService StudentService,ILogger<StudentController> logger)
         {
             _smartSqlMapper = smartSqlMapper;
             _studentService = StudentService;
+            _logger = logger;
+        }
+
+        [HttpPost]
+        public string Test([FromBody]int id)
+        {
+            return id.ToString();
         }
 
         #region Command
@@ -51,18 +61,23 @@ namespace Wss.WebService2.Controllers
         [HttpGet]
         public ResponseMessageWrap<QueryStudentEnquiryResponse> QueryStudentEnquiry(QueryStudentEnquiryRequest reqMsg)
         {
+         
             var list = _smartSqlMapper.Query<Student>(new RequestContext()
             {
                 SqlId = "Select",
                 Scope = "T_Student",
                 Request = reqMsg
             });
+            
             var totla = _smartSqlMapper.ExecuteScalar<int>(new RequestContext()
             {
                 SqlId = "Count",
                 Scope = "T_Student",
                 Request = reqMsg
             });
+            _logger.LogInformation("你访问了首页");
+            _logger.LogWarning("警告信息");
+            _logger.LogError("错误信息");
             return new ResponseMessageWrap<QueryStudentEnquiryResponse>()
             {
                 Body = new QueryStudentEnquiryResponse()

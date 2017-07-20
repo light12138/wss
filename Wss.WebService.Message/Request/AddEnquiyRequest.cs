@@ -11,5 +11,9 @@ namespace Wss.WebService.Message.Request
         public int Age { get; set; }
         
         public int GradeId { get; set; } 
+
+        public string Sex { get; set; }
+
+        public DateTime? CreateTime { get; set; }
     }
 }

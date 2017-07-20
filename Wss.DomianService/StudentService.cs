@@ -23,6 +23,7 @@ namespace Wss.DomianService
         public ResponseMessage AddEnquiy (AddEnquiyRequest reqMsg)
         {
             var result = new ResponseMessage();
+            
             try
             {
                 var i = _studentService.AddEnquiy(reqMsg);

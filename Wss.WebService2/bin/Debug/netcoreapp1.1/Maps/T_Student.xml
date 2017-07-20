@@ -23,7 +23,7 @@
     
     <Statement Id="Insert">
       INSERT INTO dbo.Student
-      ( Name, Age, GradeId,CreateTime,@Sex)
+      ( Name, Age, GradeId,CreateTime,Sex)
       VALUES  (@Name,@Age,@GradeId,@CreateTime,@Sex)
     </Statement>
 
@@ -35,7 +35,7 @@
       Detele Student where Id=@Id
     </Statement>
     <Statement Id="Select">
-      SELECT * FROM
+      SELECT * FROMa
       (SELECT ROW_NUMBER() OVER(ORDER BY Id) AS S_Index,* FROM dbo.Student T WITH(NOLOCK)
       <Include RefId="QueryParams"/>
       ) TT
