@@ -9,6 +9,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.Extensions.FileProviders;
+using System.Diagnostics;
+using System.IO;
 
 namespace Wss.TestWeb
 {
@@ -29,6 +32,11 @@ namespace Wss.TestWeb
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<IFileProvider>(new PhysicalFileProvider(@"d:\\exercise\wss\wss\Wss.TestWeb\wwwroot"));
+         //   Debug.Assert(content == File.ReadAllText(@"c:\test\data.txt"));
+
+
+
             // Add framework services.
             services.AddMvc();
 
@@ -38,6 +46,7 @@ namespace Wss.TestWeb
             });
 
             //services.AddSession();
+
 
         }
 

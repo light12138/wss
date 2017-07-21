@@ -29,12 +29,16 @@ namespace Wss.WebService2.Controllers
         public string Get1(int a)
         {
             //var i =1/;
-          
+            try
+            {
                 int i = 0;
                 int j = 1;
-                int b = j / i;          
-
-            return "404";
+                int b = j / i;
+            }catch(Exception e)
+            {
+                Logger.Fatal(e.Message);
+            }
+            return "出错了";
         }
 
         // POST api/values

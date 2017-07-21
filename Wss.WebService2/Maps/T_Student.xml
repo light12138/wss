@@ -1,6 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <SmartSqlMap Scope="T_Student"  xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
-  <Statements>
+
+  <Caches>
+    <Cache Id="T_Test.RedisCache" Type="SmartSql.Cache.Redis.RedisCacheProvider,SmartSql.Cache.Redis">
+      <Parameter Key="CacheSize" Value="1000"/>
+      <Parameter Key="ConnectionString" Value="127.0.0.1"/>
+      <Parameter Key="DatabaseId" Value="0"/>
+      <FlushInterval Hours="24" Minutes="0" Seconds="0"/>
+      <FlushOnExecute Statement="T_Test.Insert"/>
+      <FlushOnExecute Statement="T_Test.Update"/>
+    </Cache>
+    </Caches>
+
+
+    <Statements>
     <Statement Id="QueryParams">
       where 1=1
       <IsNotEmpty Prepend="And" Property="Name">
@@ -52,5 +65,8 @@
         T.Id=@Id
       </IsNotEmpty>
     </Statement>
+      <Statement Id="GetListByRedisCache" Cache="T_Test.RedisCache">
+        SELECT Top 1 * from Student T With(NoLock)      
+      </Statement>
   </Statements>  
 </SmartSqlMap>

@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.Logging.Debug;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 
@@ -53,7 +54,11 @@ namespace Testlogger
             //traceSource.TraceEvent(TraceEventType.Information, eventId, "升级到最新版本({0})", "1.0.0.rc2");
             //traceSource.TraceEvent(TraceEventType.Warning, eventId, "并发量接近上限({0}) ", 200);
             //traceSource.TraceEvent(TraceEventType.Error, eventId, "数据库连接失败(数据库：{0}，用户名：{1})", "TestDb", "sa");
-
+            string aa = "3";
+            aa.ToInt();
+           // string.Compare
+            var list = new List<string>() { "aa", "54546", "afcc" };
+            var a = list.ListOrderby();
             Console.Read();
         }
     }

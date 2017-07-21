@@ -11,6 +11,7 @@ using SmartSql.Abstractions;
 using MaiDao.Infrastructure.Message;
 using System.Net.Http;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Wss.WebService2.Controllers
 {
@@ -24,7 +25,7 @@ namespace Wss.WebService2.Controllers
         private readonly ILogger<StudentController> _logger;
 
 
-        public StudentController(ISmartSqlMapper smartSqlMapper, StudentService StudentService,ILogger<StudentController> logger)
+        public StudentController(ISmartSqlMapper smartSqlMapper, StudentService StudentService, ILogger<StudentController> logger)
         {
             _smartSqlMapper = smartSqlMapper;
             _studentService = StudentService;
@@ -40,6 +41,7 @@ namespace Wss.WebService2.Controllers
         #region Command
 
         [HttpPost]
+        //[Authorize(ActiveAuthenticationSchemes = "MaiDao.Service")]
         public WebService.Message.Response.ResponseMessage AddEnquiy([FromBody]AddEnquiyRequest reqMsg)
         {
             return _studentService.AddEnquiy(reqMsg);
@@ -61,14 +63,14 @@ namespace Wss.WebService2.Controllers
         [HttpGet]
         public ResponseMessageWrap<QueryStudentEnquiryResponse> QueryStudentEnquiry(QueryStudentEnquiryRequest reqMsg)
         {
-         
+
             var list = _smartSqlMapper.Query<Student>(new RequestContext()
             {
                 SqlId = "Select",
                 Scope = "T_Student",
                 Request = reqMsg
             });
-            
+
             var totla = _smartSqlMapper.ExecuteScalar<int>(new RequestContext()
             {
                 SqlId = "Count",
@@ -84,7 +86,7 @@ namespace Wss.WebService2.Controllers
                 {
                     StudentEnquiryList = list.ToList(),
                     Totla = totla
-                    
+
                 }
             };
 
@@ -107,7 +109,24 @@ namespace Wss.WebService2.Controllers
                 }
             };
         }
-        //public HttpResponseMessage
+        [HttpPost]
+        public ResponseMessageWrap<GetEntityByIdResponse> GetEntityByRedis()
+        {
+
+            var entity = _smartSqlMapper.QuerySingle<Student>(new RequestContext()
+            {
+                Scope = "T_Student",
+                SqlId = "GetListByRedisCache",
+                Request = new { }
+            });
+            return new ResponseMessageWrap<GetEntityByIdResponse>()
+            {
+                Body = new GetEntityByIdResponse()
+                {
+                    Stu = entity
+                }
+            };
+        }
 
 
     }

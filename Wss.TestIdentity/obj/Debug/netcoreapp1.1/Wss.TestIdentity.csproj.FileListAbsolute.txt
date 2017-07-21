@@ -1,0 +1,6 @@
+D:\exercise\wss\wss\Wss.TestIdentity\bin\Debug\netcoreapp1.1\Wss.TestIdentity.deps.json
+D:\exercise\wss\wss\Wss.TestIdentity\bin\Debug\netcoreapp1.1\Wss.TestIdentity.runtimeconfig.json
+D:\exercise\wss\wss\Wss.TestIdentity\bin\Debug\netcoreapp1.1\Wss.TestIdentity.runtimeconfig.dev.json
+D:\exercise\wss\wss\Wss.TestIdentity\bin\Debug\netcoreapp1.1\Wss.TestIdentity.dll
+D:\exercise\wss\wss\Wss.TestIdentity\obj\Debug\netcoreapp1.1\Wss.TestIdentity.AssemblyInfo.cs
+D:\exercise\wss\wss\Wss.TestIdentity\obj\Debug\netcoreapp1.1\Wss.TestIdentity.csprojResolveAssemblyReference.cache

@@ -3,7 +3,6 @@ D:\exercise\wss\wss\Wss.TestWeb\bin\Debug\netcoreapp1.1\Wss.TestWeb.runtimeconfi
 D:\exercise\wss\wss\Wss.TestWeb\bin\Debug\netcoreapp1.1\Wss.TestWeb.runtimeconfig.dev.json
 D:\exercise\wss\wss\Wss.TestWeb\bin\Debug\netcoreapp1.1\Wss.TestWeb.dll
 D:\exercise\wss\wss\Wss.TestWeb\bin\Debug\netcoreapp1.1\Wss.TestWeb.pdb
-D:\exercise\wss\wss\Wss.TestWeb\obj\Debug\netcoreapp1.1\Wss.TestWeb.csprojResolveAssemblyReference.cache
 D:\exercise\wss\wss\Wss.TestWeb\obj\Debug\netcoreapp1.1\Wss.TestWeb.AssemblyInfo.cs
 D:\exercise\wss\wss\Wss.TestWeb\obj\Debug\netcoreapp1.1\Wss.TestWeb.dll
 D:\exercise\wss\wss\Wss.TestWeb\obj\Debug\netcoreapp1.1\Wss.TestWeb.pdb

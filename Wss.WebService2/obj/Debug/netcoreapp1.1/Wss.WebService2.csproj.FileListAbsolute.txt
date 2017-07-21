@@ -1,4 +1,5 @@
 D:\exercise\wss\wss\Wss.WebService2\bin\Debug\netcoreapp1.1\Maps\T_Student.xml
+D:\exercise\wss\wss\Wss.WebService2\bin\Debug\netcoreapp1.1\nlog.config
 D:\exercise\wss\wss\Wss.WebService2\bin\Debug\netcoreapp1.1\SmartSqlMapConfig.xml
 D:\exercise\wss\wss\Wss.WebService2\bin\Debug\netcoreapp1.1\Wss.WebService2.deps.json
 D:\exercise\wss\wss\Wss.WebService2\bin\Debug\netcoreapp1.1\Wss.WebService2.runtimeconfig.json
@@ -19,3 +20,4 @@ D:\exercise\wss\wss\Wss.WebService2\obj\Debug\netcoreapp1.1\Wss.WebService2.cspr
 D:\exercise\wss\wss\Wss.WebService2\obj\Debug\netcoreapp1.1\Wss.WebService2.AssemblyInfo.cs
 D:\exercise\wss\wss\Wss.WebService2\obj\Debug\netcoreapp1.1\Wss.WebService2.dll
 D:\exercise\wss\wss\Wss.WebService2\obj\Debug\netcoreapp1.1\Wss.WebService2.pdb
+D:\exercise\wss\wss\Wss.WebService2\bin\Debug\netcoreapp1.1\SmartSqlLog.xml

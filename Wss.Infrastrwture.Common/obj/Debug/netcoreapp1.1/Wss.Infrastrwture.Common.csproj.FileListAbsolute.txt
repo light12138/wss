@@ -1,7 +1,6 @@
 D:\exercise\wss\wss\Wss.Infrastrwture.Common\bin\Debug\netcoreapp1.1\Wss.Infrastrwture.Common.deps.json
 D:\exercise\wss\wss\Wss.Infrastrwture.Common\bin\Debug\netcoreapp1.1\Wss.Infrastrwture.Common.dll
 D:\exercise\wss\wss\Wss.Infrastrwture.Common\bin\Debug\netcoreapp1.1\Wss.Infrastrwture.Common.pdb
-D:\exercise\wss\wss\Wss.Infrastrwture.Common\obj\Debug\netcoreapp1.1\Wss.Infrastrwture.Common.csprojResolveAssemblyReference.cache
 D:\exercise\wss\wss\Wss.Infrastrwture.Common\obj\Debug\netcoreapp1.1\Wss.Infrastrwture.Common.AssemblyInfo.cs
 D:\exercise\wss\wss\Wss.Infrastrwture.Common\obj\Debug\netcoreapp1.1\Wss.Infrastrwture.Common.dll
 D:\exercise\wss\wss\Wss.Infrastrwture.Common\obj\Debug\netcoreapp1.1\Wss.Infrastrwture.Common.pdb

@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wss.TestWeb", "Wss.TestWeb\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wss.WebService2", "Wss.WebService2\Wss.WebService2.csproj", "{1EC6DF0D-16C5-44CD-920A-EAEA8A272034}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testlogger", "Testlogger\Testlogger.csproj", "{8F3A6CB6-5B4B-43CF-A726-2E36A215759E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testlogger", "Testlogger\Testlogger.csproj", "{8F3A6CB6-5B4B-43CF-A726-2E36A215759E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wss.TestIdentity", "Wss.TestIdentity\Wss.TestIdentity.csproj", "{07F47CE9-45B2-4A6F-8A29-ACF1F9A538B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +75,10 @@ Global
 		{8F3A6CB6-5B4B-43CF-A726-2E36A215759E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F3A6CB6-5B4B-43CF-A726-2E36A215759E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F3A6CB6-5B4B-43CF-A726-2E36A215759E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07F47CE9-45B2-4A6F-8A29-ACF1F9A538B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F47CE9-45B2-4A6F-8A29-ACF1F9A538B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F47CE9-45B2-4A6F-8A29-ACF1F9A538B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F47CE9-45B2-4A6F-8A29-ACF1F9A538B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,5 +93,6 @@ Global
 		{33A487C0-E4E3-443A-8F36-94492ECA3334} = {933B5254-3449-44A6-A522-8F3B44FAEADC}
 		{1EC6DF0D-16C5-44CD-920A-EAEA8A272034} = {EF7BC6B6-B362-438A-8438-B87804609B00}
 		{8F3A6CB6-5B4B-43CF-A726-2E36A215759E} = {933B5254-3449-44A6-A522-8F3B44FAEADC}
+		{07F47CE9-45B2-4A6F-8A29-ACF1F9A538B5} = {933B5254-3449-44A6-A522-8F3B44FAEADC}
 	EndGlobalSection
 EndGlobal

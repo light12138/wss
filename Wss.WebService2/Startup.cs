@@ -13,6 +13,7 @@ using Swashbuckle.AspNetCore.Swagger;
 using NLog.Extensions.Logging;
 using NLog.Web;
 using Wss.WebService2.Common;
+using Microsoft.Extensions.Caching.Distributed;
 
 namespace Wss.WebService2
 {
@@ -37,7 +38,7 @@ namespace Wss.WebService2
             services.AddMvc((options) =>
             {
                 options.Filters.Add(typeof(WebApiExceptionFilterAttribute));
-               // options.Filters.Add(typeof(HttpGlobalValidateModelFilter));
+                // options.Filters.Add(typeof(HttpGlobalValidateModelFilter));
             });
 
             //直接加载出来数据操作类
@@ -47,6 +48,7 @@ namespace Wss.WebService2
             services.AddSingleton<StudentService>();
             services.AddSingleton<StudentDateAccess>(new StudentDateAccess());
 
+            services.AddDistributedMemoryCache();
 
             #region Swagger的配置            
 
@@ -67,9 +69,7 @@ namespace Wss.WebService2
             #endregion
 
             #region 身份认证
-            //     services.AddIdentity<ApplicationUser, IdentityRole>()
-            //.AddEntityFrameworkStores<ApplicationDbContext>()
-            //.AddDefaultTokenProviders();
+
 
 
             #endregion
@@ -87,6 +87,16 @@ namespace Wss.WebService2
             #endregion
 
 
+            #region 跨域脚本访问
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll",
+                    builder => builder.AllowAnyOrigin()
+                        );
+            });
+
+            #endregion
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -103,11 +113,16 @@ namespace Wss.WebService2
             //}
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-
-
+            app.UseTokenAuthentication(new MaiDao.AspNetCore.Authentication.TokenOptions
+            {
+                AuthenticationScheme = "MaiDao.Service",
+                TokenHeader = "Token",
+                TokenQueryString = "Token",
+                TokenStore = app.ApplicationServices.GetRequiredService<IDistributedCache>()
+            });
             // Create a catch-all response
-           
 
+            app.UseCors("AllowAll");
 
             app.UseSession();
             app.UseSwagger();
