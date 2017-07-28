@@ -1,0 +1,9 @@
+D:\exercise\wss\wss\Wss.TestTdentity2\bin\Debug\netcoreapp1.1\Wss.TestTdentity2.deps.json
+D:\exercise\wss\wss\Wss.TestTdentity2\bin\Debug\netcoreapp1.1\Wss.TestTdentity2.runtimeconfig.json
+D:\exercise\wss\wss\Wss.TestTdentity2\bin\Debug\netcoreapp1.1\Wss.TestTdentity2.runtimeconfig.dev.json
+D:\exercise\wss\wss\Wss.TestTdentity2\bin\Debug\netcoreapp1.1\Wss.TestTdentity2.dll
+D:\exercise\wss\wss\Wss.TestTdentity2\bin\Debug\netcoreapp1.1\Wss.TestTdentity2.pdb
+D:\exercise\wss\wss\Wss.TestTdentity2\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+D:\exercise\wss\wss\Wss.TestTdentity2\obj\Debug\netcoreapp1.1\Wss.TestTdentity2.AssemblyInfo.cs
+D:\exercise\wss\wss\Wss.TestTdentity2\obj\Debug\netcoreapp1.1\Wss.TestTdentity2.dll
+D:\exercise\wss\wss\Wss.TestTdentity2\obj\Debug\netcoreapp1.1\Wss.TestTdentity2.pdb

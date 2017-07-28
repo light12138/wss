@@ -75,5 +75,13 @@ namespace Wss.DomianService
         {
             return _studentService.AddsEnquiy(reqMsg);
         }
+
+        public ResponseMessage Test()
+        {
+            int i = 0;
+            int j = 1;
+            int b = j / i;
+            return new ResponseMessage();
+        }
     }
 }

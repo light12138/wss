@@ -12,6 +12,9 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.Extensions.FileProviders;
 using System.Diagnostics;
 using System.IO;
+using Wss.TestWeb.DBContextModel;
+using Microsoft.EntityFrameworkCore;
+using Wss.TestWeb.Model;
 
 namespace Wss.TestWeb
 {
@@ -33,12 +36,15 @@ namespace Wss.TestWeb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IFileProvider>(new PhysicalFileProvider(@"d:\\exercise\wss\wss\Wss.TestWeb\wwwroot"));
-         //   Debug.Assert(content == File.ReadAllText(@"c:\test\data.txt"));
+            //   Debug.Assert(content == File.ReadAllText(@"c:\test\data.txt"));
 
+
+            services.AddDbContext<Sqlcontest>(options =>
+                options.UseSqlServer(Configuration.GetSection("SqlServer")["Read"]));
 
 
             // Add framework services.
-            services.AddMvc();
+             services.AddMvc();
 
             services.AddSwaggerGen(c =>
             {
@@ -54,7 +60,16 @@ namespace Wss.TestWeb
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
-            loggerFactory.AddDebug();
+            loggerFactory.AddConsole();
+            env.EnvironmentName = EnvironmentName.Production;
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/error");
+            }
 
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
@@ -68,16 +83,19 @@ namespace Wss.TestWeb
 
             app.UseMvc();
 
+            //app.usedbcontext();
 
-            #region 错误页的显示
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            #endregion
+            //#region 错误页的显示
+            //if (env.IsDevelopment())
+            //{
+            //    app.UseDeveloperExceptionPage();
+            //}
+            //#endregion
 
 
            // app.UseSession();
         }
     }
+
+ 
 }

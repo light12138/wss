@@ -6,39 +6,48 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using NLog;
+using Wss.WebService.Message.Request;
+using Wss.WebService.Message.Response;
+using Wss.DomianService;
 
 namespace Wss.WebService2.Controllers
 {
-    [Route("[controller]/[Action]")]
+    [Route("api/[Action]")]
     public class ValuesController : Controller
     {
-
+        readonly StudentService _studentService;
         static Logger Logger = LogManager.GetCurrentClassLogger();
+
+        public ValuesController(StudentService StudentService)
+        {
+            _studentService = StudentService;
+        }
+
+
         // GET api/values
-        [HttpGet]       
-        public IEnumerable<string> Get(int i)
+        [HttpGet]    
+        [Route("GetList")]
+        public ResponseMessage Get()
         {
             //HttpContext.Session.SetString("abc", "wss");
             //var name=HttpContext.Session.GetString("abc");
-            return new string[] { "value1", "500" };
+            return new ResponseMessage();
           
         }
 
         // GET api/values/5
-        [HttpGet]       
-        public string Get1(int a)
+        [HttpGet]   
+        [Route("Get1")]
+        public ResponseMessage Get1(string param)
         {
             //var i =1/;
-            try
-            {
-                int i = 0;
-                int j = 1;
-                int b = j / i;
-            }catch(Exception e)
-            {
-                Logger.Fatal(e.Message);
-            }
-            return "出错了";
+             var result= _studentService.Test();
+            return result;
+
+
+            //return "出错了";
+             
+            
         }
 
         // POST api/values

@@ -4,3 +4,6 @@ D:\exercise\wss\wss\Wss.TestIdentity\bin\Debug\netcoreapp1.1\Wss.TestIdentity.ru
 D:\exercise\wss\wss\Wss.TestIdentity\bin\Debug\netcoreapp1.1\Wss.TestIdentity.dll
 D:\exercise\wss\wss\Wss.TestIdentity\obj\Debug\netcoreapp1.1\Wss.TestIdentity.AssemblyInfo.cs
 D:\exercise\wss\wss\Wss.TestIdentity\obj\Debug\netcoreapp1.1\Wss.TestIdentity.csprojResolveAssemblyReference.cache
+D:\exercise\wss\wss\Wss.TestIdentity\bin\Debug\netcoreapp1.1\Wss.TestIdentity.pdb
+D:\exercise\wss\wss\Wss.TestIdentity\obj\Debug\netcoreapp1.1\Wss.TestIdentity.dll
+D:\exercise\wss\wss\Wss.TestIdentity\obj\Debug\netcoreapp1.1\Wss.TestIdentity.pdb

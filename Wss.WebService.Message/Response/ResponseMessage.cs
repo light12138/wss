@@ -9,5 +9,10 @@ namespace Wss.WebService.Message.Response
         public string Msg { get; set; }
 
         public bool IsSuccess { get; set; }
+
+        public ResponseMessage()
+        {
+            IsSuccess = true;
+        }
     }
 }

@@ -14,6 +14,7 @@ using NLog.Extensions.Logging;
 using NLog.Web;
 using Wss.WebService2.Common;
 using Microsoft.Extensions.Caching.Distributed;
+using Wss.WebService2.Middlewares;
 
 namespace Wss.WebService2
 {
@@ -41,6 +42,17 @@ namespace Wss.WebService2
                 // options.Filters.Add(typeof(HttpGlobalValidateModelFilter));
             });
 
+
+            IServiceProvider pro = services.BuildServiceProvider();//ASP.NET Core中的DI容器最终体现为一个IServiceProvider接口，我们将所有实现了该接口的类型及其实例统称为ServiceProvider。
+            ServiceDescriptor s;
+            /*
+             pro.GetService()//IServiceProvider接口里的唯一的方法，实现的DI返回一个类             
+             */
+
+
+
+
+
             //直接加载出来数据操作类
             services.AddSingleton(SmartSql.MapperContainer.Instance.GetSqlMapper());
 
@@ -67,13 +79,11 @@ namespace Wss.WebService2
             });
 
             #endregion
-
             #region 身份认证
 
 
 
             #endregion
-
             #region 启用session
             services.AddDistributedMemoryCache();
 
@@ -85,8 +95,6 @@ namespace Wss.WebService2
             });
 
             #endregion
-
-
             #region 跨域脚本访问
             services.AddCors(options =>
             {
@@ -102,17 +110,20 @@ namespace Wss.WebService2
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            //env.EnvironmentName = EnvironmentName.Production;
-            //if (env.IsDevelopment())
-            //{
-            //    app.UseDeveloperExceptionPage();
-            //}
-            //else
-            //{
-            //    app.UseExceptionHandler("/Error");
-            //}
+            env.EnvironmentName = EnvironmentName.Production;
+            var aa = env.IsDevelopment();
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                //app.UseExceptionHandler("/error");
+            }
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
+
             app.UseTokenAuthentication(new MaiDao.AspNetCore.Authentication.TokenOptions
             {
                 AuthenticationScheme = "MaiDao.Service",
@@ -124,11 +135,13 @@ namespace Wss.WebService2
 
             app.UseCors("AllowAll");
 
+            app.UseMiddleware<ExceptionMiddlewares>();
+
             app.UseSession();
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", Configuration.GetSection("Swagger")["Title"]);
             });
 
             app.UseMvc(routes =>

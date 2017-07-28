@@ -1,0 +1,4 @@
+D:\exercise\wss\wss\Wss.DataMSSql\bin\Debug\netcoreapp1.1\Wss.DataMSSql.deps.json
+D:\exercise\wss\wss\Wss.DataMSSql\bin\Debug\netcoreapp1.1\Wss.DataMSSql.dll
+D:\exercise\wss\wss\Wss.DataMSSql\obj\Debug\netcoreapp1.1\Wss.DataMSSql.csprojResolveAssemblyReference.cache
+D:\exercise\wss\wss\Wss.DataMSSql\obj\Debug\netcoreapp1.1\Wss.DataMSSql.AssemblyInfo.cs

@@ -20,6 +20,7 @@ namespace Wss.WebService2.Common
             var message = context.Exception.Message;
             var src = context.ActionDescriptor.RouteValues["controller"] + "/"+context.ActionDescriptor.RouteValues["action"];
             var result = _sbll.AddEnquiy(new WebService.Message.Request.AddEnquiyRequest() { Name = message+"地址："+src, Age = 21, GradeId = 4, Sex = "男", CreateTime = DateTime.Now });
+            
             base.OnException(context);
         }
     }

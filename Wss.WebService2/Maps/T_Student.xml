@@ -48,7 +48,7 @@
       Detele Student where Id=@Id
     </Statement>
     <Statement Id="Select">
-      SELECT * FROMa
+      SELECT * FROM
       (SELECT ROW_NUMBER() OVER(ORDER BY Id) AS S_Index,* FROM dbo.Student T WITH(NOLOCK)
       <Include RefId="QueryParams"/>
       ) TT

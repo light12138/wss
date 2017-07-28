@@ -12,6 +12,7 @@ using MaiDao.Infrastructure.Message;
 using System.Net.Http;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 
 namespace Wss.WebService2.Controllers
 {
@@ -61,6 +62,7 @@ namespace Wss.WebService2.Controllers
         #endregion
 
         [HttpGet]
+        //[EnableCors("AllowAll")]
         public ResponseMessageWrap<QueryStudentEnquiryResponse> QueryStudentEnquiry(QueryStudentEnquiryRequest reqMsg)
         {
 
